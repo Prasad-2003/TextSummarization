@@ -10,6 +10,6 @@ class dataingestionpipeline:
         config = ConfigurationManager()
         data_ingestion_config = config.get_dataingestion_config()
         data_ingestion = DataIngestion(config=data_ingestion_config)
-        print("createed_successfully")
+
         data_ingestion.download_file()
         data_ingestion.extract_zipfile()
