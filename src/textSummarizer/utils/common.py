@@ -32,7 +32,7 @@ def create_directories(paths: list, verbose=True):
             verbose: print info about created directories
     '''
     for path in paths:
-        os.makedirs(path, exist_ok=True):
+        os.makedirs(path, exist_ok=True)
         if verbose:
             logger.info(f"directory: {path} created successfully")
                 
