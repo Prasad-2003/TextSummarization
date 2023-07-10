@@ -2,9 +2,9 @@ from textSummarizer.config.configuration import Configurationmanager
 from transformers import AutoTokenizer
 from transformers import pipeline
 
- class predictionpipeline:
-     def __init__(self):
-         self.config = Configurationmanager().get_model_evaluation_config()
+class predictionpipeline:
+    def __init__(self):
+        self.config = Configurationmanager().get_model_evaluation_config()
          
     def predict(self, text):
         tokenizer = AutoTokenizer.from_pretrained(self.config.tokenizer_path)
@@ -19,4 +19,4 @@ from transformers import pipeline
         print("prediction:")
         print(prediction)
         
-        return output
+        return prediction
